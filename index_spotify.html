@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/main.css">
+  <script src="./src/lib/fontawesome/js/all.js"></script>
+  <script src="./src/js/components/shared/article.js"></script>
+  <script src="./src/js/components/categories.js"></script>
+  <script src="./src/js/components/playlists.js"></script>
+  <script src="./src/js/spotify-api/SpotifyApp.js"></script>
+  <script src="./src/js/components/home.js"></script>
+  <title>Spotify DAN</title>
+</head>
+
+<body onload="init()">
+  <nav class="nav-sp">
+    <i class="fa-brands fa-spotify"></i>
+    <ul class="nav-list">
+      <li class="nav-home"><a href="#home"><i class="fa-solid fa-house"></i></a></li>
+      <li class="nav-artist"><a href="#artists"><i class="fa-solid fa-users"></i></a></li>
+      <li class="nav-music"><a href="#music"><i class="fa-solid fa-music"></i></a></li>
+      <li class="nav-login"><a href="http://localhost:8888"><i class="fa-solid fa-user"></i></a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Spotify</h1>
+
+    <!-- Categories -->
+
+    <div class="home-container-categories">
+
+      <!-- Categories section -->
+
+      <section class="section" id="home-categories">
+        <h2>Categories</h2>
+        <div class="container container-categories">
+        </div>
+        <button id="more" class="more-categories"
+          onclick="location.href='components/categories.html'">...</button>
+      </section>
+
+      <!-- Categories Description -->
+      <div class="home-container-categories-arr">
+        <button class="close-button"><i class="fa-solid fa-xmark"></i></button>
+        <div class="home-container-categories-playlists"></div>
+      </div>
+
+    </div>
+
+    <!-- Playlists -->
+
+    <div class="home-container-playlists">
+
+      <!-- Playlists section -->
+
+      <section class="section" id="home-playlists">
+        <h2>Playlists</h2>
+        <div class="container container-playlists">
+        </div>
+        <button id="more" class="more-playlists"
+          onclick="location.href='components/playlists.html'">...</button>
+      </section>
+
+
+      <!-- Playlists Description -->
+
+<!--       <article class="card-description playlist-card">
+        <button onclick="closeCard()"><i class="fa-solid fa-xmark"></i></button>
+        <h3 class="card-title playlist-title"></h3>
+        <img class="card-img playlist-img">
+        <hr>
+        <p class="card-body playlist-body"></p>
+        <button class="card-button"><a class="card-link playlist-link" target="_blank">Listen me</a></button>
+      </article> -->
+
+    </div>
+  </main>
+</body>
+
+</html>
